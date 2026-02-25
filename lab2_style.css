@@ -1,0 +1,63 @@
+body{
+  margin: 0;
+  min-height: 100vh;
+  color: #e6e6e6;
+
+  /* dark overlay + image (better text readability) */
+  background-image:
+    linear-gradient(rgba(5, 0, 22, 0.70), rgba(5, 0, 22, 0.70)),
+    url("https://img.freepik.com/free-vector/futuristic-technological-wallpaper_79603-1093.jpg?semt=ais_hybrid");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1{
+  text-align: center;
+  color: #ffffff;      /* optional: brighter on dark bg */
+  margin: 24px 0;      /* optional: spacing */
+}
+
+
+
+
+.parent-div {
+  display: flex;
+  gap: 10px;
+  justify-content: center;   /* center cards */
+  flex-wrap: wrap;           /* responsive wrap */
+}
+
+.card {
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+/* main button style */
+.buy-btn{
+  display: block;
+  margin: 12px auto 0;
+  width: fit-content;
+  padding: 10px 18px;
+
+  border: 0;
+  border-radius: 999px;
+
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #ff0000, #0b0920, #2563eb);
+  box-shadow: 0 12px 22px rgba(124, 58, 237, 0.25);
+  transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+/* hover and active are pseudo-classes (states) */
+.buy-btn:hover{
+  filter: brightness(1.06);
+}
+
+.buy-btn:active{
+  transform: translateY(1px);
+}
