@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LOGIN</title>
+
+<script src="/LabTask3/Script/lab3_script.js"></script>
+
+</head>
+
+<body>
+
+<h1>Login Form</h1>
+
+<form onsubmit="return collect_data()">
+
+<label>Email:</label>
+<input type="text" id="email" onkeyup="getEmail()" required>
+<span id="emailErr" style="color:red"></span>
+
+<br><br>
+
+<label>Password:</label>
+<input type="password" id="password" onkeyup="getPassword()">
+<span id="passwordErr" style="color:red"></span>
+
+<br><br>
+
+<button type="submit">Login</button>
+
+</form>
+
+<br>
+
+<div id="attemptCount">Invalid attempts: 0</div>
+
+</body>
+</html>

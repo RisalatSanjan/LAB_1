@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Calculator with History</title>
+  <link rel="stylesheet" href="/LabMidExam/CSS/calculator.css" />
+  <script src="/LabMidExam/JS/calculator.js" defer></script>
+</head>
+<body>
+  <div class="main-wrapper">
+    <h1 class="page-title">CALCULATOR</h1>
+
+    <div class="calculator-area">
+      <div class="calculator">
+        <div class="display-box">
+          <div id="expression" class="expression">0</div>
+          <div id="result" class="result"></div>
+        </div>
+
+        <div class="row">
+          <button class="clear" onclick="clearAll()">C</button>
+          <button class="muted" onclick="deleteLast()">⌫</button>
+          <button class="muted" onclick="toggleSign()">±</button>
+          <button class="operator" onclick="appendOperator('/')">÷</button>
+        </div>
+
+        <div class="row">
+          <button class="muted" onclick="appendParenthesis('(')">(</button>
+          <button class="muted" onclick="appendParenthesis(')')">)</button>
+          <button class="muted" onclick="appendPercent()">%</button>
+          <button class="operator" onclick="appendOperator('*')">×</button>
+        </div>
+
+        <div class="row">
+          <button onclick="appendNumber('7')">7</button>
+          <button onclick="appendNumber('8')">8</button>
+          <button onclick="appendNumber('9')">9</button>
+          <button class="operator" onclick="appendOperator('-')">−</button>
+        </div>
+
+        <div class="row">
+          <button onclick="appendNumber('4')">4</button>
+          <button onclick="appendNumber('5')">5</button>
+          <button onclick="appendNumber('6')">6</button>
+          <button class="operator" onclick="appendOperator('+')">+</button>
+        </div>
+
+        <div class="row">
+          <button onclick="appendNumber('1')">1</button>
+          <button onclick="appendNumber('2')">2</button>
+          <button onclick="appendNumber('3')">3</button>
+          <button class="equal" onclick="calculateResult()">=</button>
+        </div>
+
+        <div class="row bottom-row">
+  <button class="wide" onclick="appendNumber('0')">0</button>
+  <button class="bottom-btn" onclick="appendDecimal()">.</button>
+  <button class="muted bottom-btn" onclick="useResult()">Ans</button>
+</div>
+
+      </div>
+
+      <div class="history-panel">
+        <div class="history-header">
+          <div class="history-title">History</div>
+          <button class="history-clear-btn" onclick="clearHistory()">Clear</button>
+        </div>
+        <div id="historyList" class="history-list"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
