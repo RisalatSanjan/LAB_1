@@ -29,6 +29,25 @@ body {
   padding: 10px 20px;
   display: inline-block;
 }
+.title-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.model-name {
+  color: #fcfcfc;
+  border: 4px solid rgb(0, 0, 0);
+  background-color: rgb(142, 0, 0);
+  border: auto
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-style: italic;
+  width: 200px;
+  padding: 8px 12px;
+  display: inline-block;
+  text-align: center;
+}
 
 
 .calculator-area {
